@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+require('rubico/global')
+const fs = require('fs')
+const IndexHTML = require('./IndexHTML')
+const manifest = require('./manifest')
+
+const {
+  domain,
+  scriptDependencies,
+  stylesheets,
+} = manifest
+
+/**
+ * @name main
+ *
+ * @synopsis
+ * ```coffeescript [specscript]
+ * main() -> Promise<>
+ * ```
+ */
+async function main() {
+  await fs.promises.rm(`${__dirname}/public`, { recursive: true, force: true })
+
+  await fs.promises.write(`${__dirname}/public/index.html`, IndexHTML({
+    title: 'Vanilla Static Website',
+    description: 'A website built with vanilla HTML, CSS, and JavaScript',
+    url: `https://${domain}/`,
+    scriptDependencies,
+    stylesheets,
+  }))
+}
+
+main()
