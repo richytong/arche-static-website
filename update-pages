@@ -1,0 +1,78 @@
+#!/usr/bin/env node
+
+require('rubico/global')
+const fs = require('fs')
+const pathWalk = require('presidium/internal/pathWalk')
+const PageHTML = require('./PageHTML')
+const manifest = require('./manifest')
+const parseHTML = require('./parseHTML')
+
+const {
+  domain,
+  scriptDependencies,
+  stylesheets,
+  pagesDirectory,
+  pages,
+} = manifest
+
+/**
+ * @name main
+ *
+ * @synopsis
+ * ```coffeescript [specscript]
+ * main() -> Promise<>
+ * ```
+ */
+async function main() {
+  const paths = await pathWalk(`${__dirname}/${pagesDirectory}`, {
+    ignore: ['*.css', '*.js'],
+  })
+
+  for (const path of paths) {
+    const pageFilepath = path.replace(`${__dirname}/${pagesDirectory}`, '')
+    console.log('pageFilepath', pageFilepath)
+
+    const content = await fs.promises.readFile(path)
+    const page = pages.find(eq(pageFilepath, get('filepath')))
+    if (page == null) {
+      console.error(content)
+      throw new Error(`page not found in manifest: ${pageFilepath}`)
+    }
+
+    const { title, description, url } = page
+
+    const $ = parseHTML(content)
+    const bodyHTML = $('body').html().trim()
+
+    console.log('Updating head elements', path)
+    await fs.promises.writeFile(path, PageHTML({
+      title,
+      description,
+      url: `https://${domain}${url}`,
+      scriptDependencies,
+      stylesheets,
+      bodyHTML,
+    }))
+  }
+
+    /*
+  for (const page of pages) {
+    const { title, description, url, filepath } = page
+
+    const absPath = `${__dirname}/${pagesDirectory}/${filepath}`
+    console.log('Creating', absPath)
+
+    await fs.promises.writeFile(absPath, PageHTML({
+      title,
+      description,
+      url: `https://${domain}${url}`,
+      scriptDependencies,
+      stylesheets,
+      bodyHTML: '',
+    }))
+  }
+  */
+
+}
+
+main()

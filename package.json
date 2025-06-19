@@ -16,6 +16,11 @@
     "start": "serve -p 4507 public"
   },
   "devDependencies": {
+    "presidium": "^0.29.13",
     "serve": "^14.2.4"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jsdom": "^26.1.0"
   }
 }

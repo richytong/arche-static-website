@@ -30,14 +30,15 @@ function PageHTML(options) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  ${HeadTags({ title, description, url })}
-  ${scriptDependencies.join('\n')}
-  ${stylesheets.join('\n')}
+${HeadTags({ title, description, url })}
+${scriptDependencies.join('\n')}
+${stylesheets.join('\n')}
 </head>
 
-<body>${bodyHTML}</body>
+<body>
+${bodyHTML}
+</body>
 
-${ModuleScriptTag('/index.js')}
 </html>
   `.trim()
 }

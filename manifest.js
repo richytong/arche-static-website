@@ -7,15 +7,33 @@ module.exports = {
   scriptDependencies: [
     ScriptTag('https://cdn.jsdelivr.net/npm/rubico@2.7.3/dist/rubico.min.js', {
       crossorigin: true,
-      async: true,
     }),
     ScriptTag('https://unpkg.com/rubico@2.7.3/dist/Transducer.min.js', {
       crossorigin: true,
-      async: true,
     }),
+    ScriptTag('https://unpkg.com/react@18.3.0/umd/react.production.min.js', {
+      crossorigin: true,
+    }),
+    ScriptTag('https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js', {
+      crossorigin: true,
+    }),
+    ScriptTag('https://unpkg.com/arche@0.3.5/index.js', {
+      crossorigin: true,
+    }),
+    ScriptTag('/global.js'),
   ],
 
   stylesheets: [
     StylesheetTag('/app.css'),
+  ],
+
+  pagesDirectory: 'public',
+  pages: [
+    {
+      title: 'Vanilla Static Website',
+      description: 'A website built with vanilla HTML, CSS, and JavaScript',
+      url: '/',
+      filepath: '/index.html',
+    }
   ],
 }

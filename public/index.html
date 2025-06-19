@@ -1,50 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>rubico - [a]synchronous functional programming</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="A library for creating async-enabled function compositions." />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="rubico - [a]synchronous functional programming" />
-  <meta name="twitter:description" content="A library for creating async-enabled function compositions." />
-  <meta property="og:title" content="rubico - [a]synchronous functional programming" />
-  <meta property="og:type" content="object" />
-  <meta property="og:url" content="https://rubico.land/" />
-  <meta property="og:description" content="A library for creating async-enabled function compositions." />
+<title>Vanilla Static Website</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="A website built with vanilla HTML, CSS, and JavaScript" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Vanilla Static Website" />
+<meta name="twitter:description" content="A website built with vanilla HTML, CSS, and JavaScript" />
+<meta property="og:title" content="Vanilla Static Website" />
+<meta property="og:type" content="object" />
+<meta property="og:url" content="https://my-domain.com/" />
+<meta property="og:description" content="A website built with vanilla HTML, CSS, and JavaScript" />
 
-  
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="canonical" href="https://rubico.land/">
-
-  <script src="https://unpkg.com/rubico@2.0.1/dist/rubico.min.js" crossorigin></script>
-  <script src="https://unpkg.com/rubico@2.0.1/dist/Transducer.min.js" crossorigin></script>
-  <script src="https://unpkg.com/arche@0.3.5/index.js" crossorigin></script>
-  <script src="https://unpkg.com/react@17.0.1/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="/codemirror/index.js"></script>
-  <link rel="stylesheet" href="/codemirror/styles.css">
-  <link rel="stylesheet" href="/codemirror/theme/rubico.css">
-  <link rel="stylesheet" href="/codemirror/theme/coffeescript.css">
-  <link rel="stylesheet" href="/index.css">
-  <script src="/codemirror/syntax/javascript.js" async></script>
-  <script src="/codemirror/syntax/coffeescript.js" async></script>
-  <script src="/codemirror/syntax/htmlmixed.js" async></script>
-  <script src="/codemirror/syntax/xml.js" async></script>
-  <script src="/codemirror/syntax/css.js" async></script>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179545084-1"></script>
-  <script async src="/global-scripts.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://my-domain.com/">
+<script src="https://cdn.jsdelivr.net/npm/rubico@2.7.3/dist/rubico.min.js" crossorigin async></script>
+<script src="https://unpkg.com/rubico@2.7.3/dist/Transducer.min.js" crossorigin async></script>
+<script src="https://unpkg.com/react@18.3.0/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/arche@0.3.5/index.js" crossorigin></script>
+<script src="/global.js" ></script>
+<link rel="stylesheet" href="/app.css" />
 </head>
 
 <body>
-  <div id="react-root"></div>
-</body>
+<h1>Home</h1>
+  <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
 
-<script type="module" src="/index.js"></script>
+  <div class="react-root">
+    <div id="click-example">
+      <h2>Click Example</h2>
+      <p>You clicked 0 times</p>
+      <button>Click me</button>
+    </div>
+  </div>
+
+  <script>
+const ClickExample = ReactElement(() => {
+  const [count, setCount] = useState(0)
+
+  return Div({ id: 'click-example' }, [
+    H2('Click Example'),
+    P(`You clicked ${count} times`),
+    Button({
+      onClick() {
+        setCount(count + 1)
+      },
+    }, 'Click me'),
+  ])
+})
+
+ReactDOM.hydrate(ClickExample(), document.getElementById('click-example').parentNode)
+  </script>
+
+
+  <div class="react-root">
+    <div id="todos-example">
+      <h2>Todos Example</h2>
+      <div class="todos-list"></div>
+    </div>
+  </div>
+
+  <script type="module">
+import TodosExample from './components/TodosExample.js'
+
+async function prepare() {
+  const toTodosUrl = id => `https://jsonplaceholder.typicode.com/todos/${id}`
+
+  const todoIDs = [1, 2, 3, 4, 5]
+
+  const todos = await map(todoIDs, pipe([
+    toTodosUrl,
+    fetch,
+    response => response.json(),
+  ]))
+
+  return { todos }
+}
+
+prepare().then(data => {
+  const { todos } = data
+
+  ReactDOM.hydrate(
+    TodosExample({ todos }),
+    document.getElementById('todos-example').parentNode
+  )
+})
+
+  </script>
+
+</body>
 
 </html>
