@@ -33,7 +33,7 @@
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
   </p>
 
-  <div class="react-root">
+  <div class="react-root" data-component-url="/components/ClickExample.js">
     <div id="click-example">
       <h2>Click Example</h2>
       <p>You clicked 0 times</p>
@@ -41,26 +41,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
   </div>
 
-  <script>
-const ClickExample = ReactElement(() => {
-  const [count, setCount] = useState(0)
 
-  return Div({ id: 'click-example' }, [
-    H2('Click Example'),
-    P(`You clicked ${count} times`),
-    Button({
-      onClick() {
-        setCount(count + 1)
-      },
-    }, 'Click me'),
-  ])
-})
-
-ReactDOM.hydrate(ClickExample(), document.getElementById('click-example').parentNode)
-  </script>
-
-
-  <div class="react-root">
+  <div class="react-root" data-component-url="/components/TodosExample.js">
     <div id="todos-example">
       <h2>Todos Example</h2>
       <div class="todos-list"></div>
@@ -68,31 +50,23 @@ ReactDOM.hydrate(ClickExample(), document.getElementById('click-example').parent
   </div>
 
   <script type="module">
-import TodosExample from './components/TodosExample.js'
-
-async function prepare() {
-  const toTodosUrl = id => `https://jsonplaceholder.typicode.com/todos/${id}`
-
-  const todoIDs = [1, 2, 3, 4, 5]
-
-  const todos = await map(todoIDs, pipe([
-    toTodosUrl,
-    fetch,
-    response => response.json(),
-  ]))
-
-  return { todos }
+async function main() {
+  const reactRootElements = document.querySelectorAll('.react-root')
+  for (const node of reactRootElements) {
+    const componentUrl = node.getAttribute('data-component-url')
+    import(`.${componentUrl}`).then(async module => {
+      const RootComponent = module.default
+      if (RootComponent.prepare) {
+        const data = await RootComponent.prepare()
+        ReactDOM.hydrate(RootComponent({ ...data }), node)
+      } else {
+        ReactDOM.hydrate(RootComponent(), node)
+      }
+    })
+  }
 }
 
-prepare().then(data => {
-  const { todos } = data
-
-  ReactDOM.hydrate(
-    TodosExample({ todos }),
-    document.getElementById('todos-example').parentNode
-  )
-})
-
+main()
   </script>
 
 </body>

@@ -25,4 +25,18 @@ const TodosExample = ReactElement(props => {
   ])
 })
 
+TodosExample.prepare = async function prepare() {
+  const toTodosUrl = id => `https://jsonplaceholder.typicode.com/todos/${id}`
+
+  const todoIDs = [1, 2, 3, 4, 5]
+
+  const todos = await map(todoIDs, pipe([
+    toTodosUrl,
+    fetch,
+    response => response.json(),
+  ]))
+
+  return { todos }
+}
+
 export default TodosExample
