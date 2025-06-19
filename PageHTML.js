@@ -12,6 +12,7 @@ const ModuleScriptTag = require('./ModuleScriptTag')
  *   url: string, // must be full url
  *   scriptDependencies?: Array<string>,
  *   stylesheets?: Array<string>,
+ *   entrypoint?: string,
  *   bodyHTML string,
  * }) -> html string
  * ```
@@ -23,6 +24,7 @@ function PageHTML(options) {
     url,
     scriptDependencies = [],
     stylesheets = [],
+    entrypoint = '/index.js',
     bodyHTML,
   } = options
 

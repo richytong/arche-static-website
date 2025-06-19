@@ -18,8 +18,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="canonical" href="https://my-domain.com/">
-<script src="https://cdn.jsdelivr.net/npm/rubico@2.7.3/dist/rubico.min.js" crossorigin async></script>
-<script src="https://unpkg.com/rubico@2.7.3/dist/Transducer.min.js" crossorigin async></script>
+<script src="https://cdn.jsdelivr.net/npm/rubico@2.7.3/dist/rubico.min.js" crossorigin></script>
+<script src="https://unpkg.com/rubico@2.7.3/dist/Transducer.min.js" crossorigin></script>
 <script src="https://unpkg.com/react@18.3.0/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18.3.0/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/arche@0.3.5/index.js" crossorigin></script>
@@ -28,6 +28,7 @@
 </head>
 
 <body>
+
 <h1>Home</h1>
   <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -49,25 +50,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
   </div>
 
-  <script type="module">
-async function main() {
-  const reactRootElements = document.querySelectorAll('.react-root')
-  for (const node of reactRootElements) {
-    const componentUrl = node.getAttribute('data-component-url')
-    import(`.${componentUrl}`).then(async module => {
-      const RootComponent = module.default
-      if (RootComponent.prepare) {
-        const data = await RootComponent.prepare()
-        ReactDOM.hydrate(RootComponent({ ...data }), node)
-      } else {
-        ReactDOM.hydrate(RootComponent(), node)
-      }
-    })
-  }
-}
-
-main()
-  </script>
+  <script src="/index.js" type="module"></script>
 
 </body>
 

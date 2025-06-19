@@ -44,7 +44,8 @@ async function main() {
     const $ = parseHTML(content)
     const bodyHTML = $('body').html().trim()
 
-    console.log('Updating head elements', path)
+    console.log('Updating page', path)
+
     await fs.promises.writeFile(path, PageHTML({
       title,
       description,
