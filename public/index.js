@@ -8,7 +8,6 @@
  */
 async function main() {
   const reactRootElements = document.querySelectorAll('.react-root')
-  console.log('main', reactRootElements)
   for (const node of reactRootElements) {
     const componentUrl = node.getAttribute('data-component-url')
     import(`.${componentUrl}`).then(async module => {
