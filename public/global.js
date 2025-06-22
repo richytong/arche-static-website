@@ -1,22 +1,24 @@
 const ReactElement = Arche(React)
-
 window.ReactElement = ReactElement
 
-for (const elementName in ReactElement) {
-  window[elementName] = ReactElement[elementName]
+const DocumentElement = Arche()
+window.DocumentElement = DocumentElement
+
+for (const elementName in DocumentElement) {
+  window[elementName] = DocumentElement[elementName]
 }
 
-window.Main = ReactElement('main')
-window.Header = ReactElement('header')
-window.Svg = ReactElement('svg')
-window.Path = ReactElement('path')
-window.Rect = ReactElement('rect')
-window.Mask = ReactElement('mask')
-window.Style = ReactElement('style')
-window.Dl = ReactElement('dl')
-window.Dt = ReactElement('dt')
-window.Dd = ReactElement('dd')
-window.S = ReactElement('s')
+window.Main = DocumentElement('main')
+window.Header = DocumentElement('header')
+window.Svg = DocumentElement('svg')
+window.Path = DocumentElement('path')
+window.Rect = DocumentElement('rect')
+window.Mask = DocumentElement('mask')
+window.Style = DocumentElement('style')
+window.Dl = DocumentElement('dl')
+window.Dt = DocumentElement('dt')
+window.Dd = DocumentElement('dd')
+window.S = DocumentElement('s')
 
 for (const key in rubico) {
   window[key] = rubico[key]

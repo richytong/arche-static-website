@@ -1,3 +1,5 @@
+const { Div, H2, P, Button } = ReactElement
+
 /**
  * @name ClickExample
  *

@@ -7,14 +7,19 @@ import TodoCard from './TodoCard.js'
  * ```coffeescript [specscript]
  * TodosExample(props {
  *   todos: Array<{
+ *     id: string,
+ *     title: string,
+ *     completed: boolean,
  *   }>,
  * })
  * ```
  */
 const TodosExample = ReactElement(props => {
-  const { todos } = props
+  const [todos, setTodos] = useState(props.todos ?? [])
+
   return Div({ id: 'todos-example' }, [
     H2('Todos Example'),
+
     Div({ class: 'todos-list' }, [
       todos.map(todo => TodoCard({
         key: todo.id,
@@ -22,21 +27,12 @@ const TodosExample = ReactElement(props => {
         completed: todo.completed,
       }))
     ]),
+
+    Button({
+      onClick(event) {
+      },
+    }, 'Load Next Todo'),
   ])
 })
-
-TodosExample.prepare = async function prepare() {
-  const toTodosUrl = id => `https://jsonplaceholder.typicode.com/todos/${id}`
-
-  const todoIDs = [1, 2, 3, 4, 5]
-
-  const todos = await map(todoIDs, pipe([
-    toTodosUrl,
-    fetch,
-    response => response.json(),
-  ]))
-
-  return { todos }
-}
 
 export default TodosExample
