@@ -51,7 +51,7 @@ Contains information about pages, dependencies, and site metadata.
 
 TODO
 
-#### config.scriptDependencies
+#### config.scripts
 
 TODO
 
