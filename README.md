@@ -6,12 +6,31 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ```
 vanilla-static-website/
-┣━lib/
-┣━public/
-┃ ┣━elements/
-┃ ┣━components/
-┃ ┗━index.html
-┗━README.md
+├── lib/
+│   ├── findPaths.js
+│   ├── findPaths.test.js
+│   ├── HeadTags.js
+│   ├── ModuleScriptTag.js
+│   ├── ObjectAttributes.js
+│   ├── PageHTML.js
+│   ├── parseHTML.js
+│   ├── ScriptTag.js
+│   └── StylesheetTag.js
+├── public/
+│   ├── components
+│   │   └── ClickExample.js
+│   ├── elements
+│   │   ├── LoadMoreButton.js
+│   │   └── TodoCardElements.js
+│   ├── global.css
+│   ├── global.js
+│   ├── index.html
+│   └── index.js
+├── config.js
+├── serve.sh
+├── update-pages
+├── package.json
+└── README.md
 ```
 
 ## Run it locally
