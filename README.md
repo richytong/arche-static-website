@@ -65,8 +65,6 @@ You are reading this file.
 
 ### [lib/](/lib)
 
-(Advanced) Make changes to the scaffolding of this project. Start hacking [here](/lib/README.md).
-
 Make changes to the scaffolding of this project (advanced). Start hacking [here](/lib/README.md).
 
 ## Run it locally
