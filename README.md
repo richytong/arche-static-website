@@ -5,6 +5,8 @@ A static website built with [Arche](https://github.com/richytong/arche?tab=readm
 
 ```
 arche-static-website/
+    lib/
+        README.md
     public/
         components/
             ClickExample.js
@@ -19,8 +21,6 @@ arche-static-website/
     update-pages.sh
     package.json
     README.md
-    lib/
-        README.md
 ```
 
 ### [public/components/](/public/components)
