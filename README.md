@@ -159,3 +159,7 @@ myChangeElement.appendChild(myJSElement)
 ## Add a new page
 
 TODO
+
+## Configuration
+
+TODO
