@@ -179,3 +179,14 @@ myChangeElement.appendChild(myJSElement)
 ## Add a new page
 
 TODO
+
+## Deployment
+This project deploys to a new Amazon S3 Bucket for the [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
+
+Simply run `deploy-aws-s3.sh`.
+
+```
+./deploy-aws-s3.sh
+```
+
+See this [guide](/TODO) for setting up a new domain on Amazon Web Services with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
