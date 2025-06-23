@@ -28,6 +28,7 @@ module.exports = {
   ],
 
   pagesDirectory: 'public',
+
   pages: [
     {
       title: 'Vanilla Static Website',
