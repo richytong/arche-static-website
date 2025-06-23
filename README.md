@@ -63,7 +63,6 @@ const myChangeElement = document.getElementById('my-change')
 const { Div, P } = DocumentElement
 const myJSElement = Div({ id: 'my-js-element' }, [
   P('My JS Element'),
-  P('Using DocumentElement'),
 ])
 myChangeElement.appendChild(myJSElement)
 </script>
