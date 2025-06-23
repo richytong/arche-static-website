@@ -8,9 +8,9 @@ vanilla-static-website/
   lib/
     README.md
   public/
-    components/ # React components go here
+    components/
       ClickExample.js
-    elements/ # Document elements go here
+    elements/
       LoadMoreButton.js
       TodoCardElements.js
     global.js # JavaScript here is available in all .js files
@@ -30,6 +30,10 @@ Put [React](https://react.dev/) components in this directory. Create React eleme
 ### [public/elements/](/public/elements)
 
 Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory. Create elements easily with [Arche](https://github.com/richytong/arche?tab=readme-ov-file#arche).
+
+### [public/global.js](/public/global.js)
+
+JavaScript in this file is available in all `<script></script>` tags in all `.html` files and all `.js` files imported into those `.html` files.
 
 ## Run it locally
 
