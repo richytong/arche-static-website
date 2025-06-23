@@ -183,10 +183,17 @@ TODO
 ## Deployment
 This project deploys to a new Amazon S3 Bucket for the domain specified by [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
 
-Simply run
+Run the deployment script.
 
 ```
+# uses your default aws configuration and credentials found in ~/.aws/config and ~/.aws/credentials
 ./deploy-aws-s3.sh
+
+# provide your aws profile
+AWS_PROFILE=<your_aws_profile> ./deploy-aws-s3.sh
+
+# provide your aws credentials directly
+AWS_ACCESS_KEY_ID=<your_aws_access_key_id> AWS_SECRET_ACCESS_KEY=<your_secret_access_key> AWS_REGION=<your_aws_region> ./deploy-aws-s3.sh
 ```
 
 Next we will set up a new domain on [Amazon Web Services](https://aws.amazon.com/) with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).

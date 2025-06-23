@@ -2,7 +2,9 @@
 
 const AwsCredentials = require('presidium/AwsCredentials')
 const S3Bucket = require('presidium/S3Bucket')
+const fs = require('fs')
 const path = require('path')
+const ContentType = require('./lib/ContentType')
 const findPaths = require('./lib/findPaths')
 const validateConfig = require('./lib/validateConfig')
 const config = require('./config')
@@ -33,8 +35,14 @@ async function main() {
 
   for (const path of paths) {
     const key = path.replace(`${dir}/`, '')
-    console.log(key)
-    // await bucket.upload()
+    const contentBuffer = await fs.promises.readFile(path)
+    const content = contentBuffer.toString('utf8')
+    const contentType = ContentType(key, content)
+    console.log(`Uploading ${path.replace(process.env.HOME, '~')} as ${key} [${contentType}]`)
+    await bucket.upload(key, content, {
+      ContentType: contentType,
+      Expires: new Date(),
+    })
   }
 }
 
