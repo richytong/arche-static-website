@@ -5,8 +5,6 @@ A static website built with [Arche](https://github.com/richytong/arche?tab=readm
 
 ```
 arche-static-website/
-    lib/
-        README.md
     public/
         components/
             ClickExample.js
@@ -21,11 +19,9 @@ arche-static-website/
     update-pages.sh
     package.json
     README.md
+    lib/
+        README.md
 ```
-
-### [lib/](/lib)
-
-Start hacking here. See the [readme](/lib/readme).
 
 ### [public/components/](/public/components)
 
@@ -50,6 +46,10 @@ HTML file for the home page. Serves requests for `/`.
 ### [config.js](/config.js)
 
 Update pages, dependencies, and site metadata here.
+
+### [lib/](/lib)
+
+Start hacking here. See the [readme](/lib/readme).
 
 ## Run it locally
 
