@@ -8,7 +8,7 @@ const config = require('./config')
 
 const {
   domain,
-  scriptDependencies,
+  scripts,
   stylesheets,
   pagesDirectory,
   pages,
@@ -48,7 +48,7 @@ async function main() {
       title,
       description,
       url: `https://${domain}${url}`,
-      scriptDependencies,
+      scripts,
       stylesheets,
       bodyHTML,
     }))

@@ -4,7 +4,7 @@ const StylesheetTag = require('./lib/StylesheetTag')
 module.exports = {
   domain: 'my-domain.com',
 
-  scriptDependencies: [
+  scripts: [
     ScriptTag('https://cdn.jsdelivr.net/npm/rubico@2.7.3/dist/rubico.min.js', {
       crossorigin: true,
     }),
