@@ -6,16 +6,16 @@ A static website built with [Arche](https://github.com/richytong/arche?tab=readm
 ```
 arche-static-website/
     lib/
-    •   README.md
+    +   README.md
     public/
-    •   components/
-    •   •   ClickExample.js
-    •   elements/
-    •   •   LoadMoreButton.js
-    •   •   TodoCardElements.js
-    +   global.js
-    •   global.css
-    •   index.html
+        components/
+        +   ClickExample.js
+        elements/
+        +   LoadMoreButton.js
+        +   TodoCardElements.js
+        global.js
+        global.css
+        index.html
     config.js
     serve-local.sh
     update-pages.sh
