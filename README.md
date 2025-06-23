@@ -47,13 +47,33 @@ This page is served to requests for the home page `/`.
 
 Contains information about pages, dependencies, and site metadata.
 
+#### config.domain
+
+TODO
+
+#### config.scriptDependencies
+
+TODO
+
+#### config.stylesheets
+
+TODO
+
+#### config.pagesDirectory
+
+TODO
+
+#### config.pages
+
+TODO
+
 ### [serve-local.sh](/serve-local.sh)
 
 Starts the local static web server.
 
 ### [update-pages.sh](/update-pages.sh)
 
-Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. Read more at [configuration](#configuration).
+Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#config.js).
 
 ### [package.json](/package.json)
 
@@ -157,9 +177,5 @@ myChangeElement.appendChild(myJSElement)
 ![arche-static-website-changes](https://rubico.land/assets/vanilla-static-website-changes.jpg)
 
 ## Add a new page
-
-TODO
-
-## Configuration
 
 TODO
