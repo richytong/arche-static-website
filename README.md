@@ -2,7 +2,7 @@
 
 A website built with vanilla HTML, CSS, and JavaScript.
 
-## How to use
+## Run it locally
 
 1. Fork the repo
 
