@@ -19,6 +19,7 @@ arche-static-website/
     config.js
     serve-local.sh
     update-pages
+    deploy-to-s3
     package.json
     README.md
 ```
@@ -74,6 +75,10 @@ Starts the local static web server.
 ### [update-pages](/update-pages)
 
 Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#configjs).
+
+### [deploy-to-s3](/deploy-to-s3)
+
+Uploads all files in the `public` directory or the directory specified by [config.pagesDir](#configpagesdir) to an Amazon S3 Bucket. See [deployment](#deployment).
 
 ### [package.json](/package.json)
 
