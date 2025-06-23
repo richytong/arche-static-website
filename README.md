@@ -7,7 +7,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
     <dt><a href="/">vanilla-static-website/</a></dt>
     <dd>
         <dl>
-            <dt><a href="/lib">lib</a></dt>
+            <dt><a href="/lib">lib/</a></dt>
             <dd><a href="/lib/README.md">README.md</a></dd>
         </dl>
     </dd>
