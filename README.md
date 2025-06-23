@@ -18,10 +18,16 @@ git clone git@github.com:my-github-user/vanilla-static-website.git
 git clone https://github.com/my-github-user/vanilla-static-website.git
 ```
 
-3. Install the dependencies
+3. Install dependencies
 
 ```
 npm i
 ```
 
-4. tmp
+4. Start the web server
+
+```
+npm start
+```
+
+5. Navigate to `http://localhost:4507/` in your browser
