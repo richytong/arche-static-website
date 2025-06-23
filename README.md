@@ -18,7 +18,7 @@ arche-static-website/
         index.html
     config.js
     serve-local.sh
-    update-pages.sh
+    update-pages
     package.json
     README.md
 ```
@@ -71,7 +71,7 @@ TODO
 
 Starts the local static web server.
 
-### [update-pages.sh](/update-pages.sh)
+### [update-pages](/update-pages)
 
 Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#configjs).
 
