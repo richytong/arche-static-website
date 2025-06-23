@@ -1,11 +1,11 @@
-# Vanilla Static Website
-
+# vanilla-static-website
 A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
 [vanilla-static-website/](/)
     [lib/](/lib)
+        [README.md](/lib/README.md)
     [public/](/public)
         [components/](/public/components)
             [ClickExample.js](/public/components/ClickExample.js)
