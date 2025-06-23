@@ -5,22 +5,22 @@ A static website built with [Arche](https://github.com/richytong/arche?tab=readm
 
 ```
 arche-static-website/
-  lib/
+    lib/
+        README.md
+    public/
+        components/
+            ClickExample.js
+        elements/
+            LoadMoreButton.js
+            TodoCardElements.js
+        global.js
+        global.css
+        index.html
+    config.js
+    serve-local.sh
+    update-pages.sh
+    package.json
     README.md
-  public/
-    components/
-      ClickExample.js
-    elements/
-      LoadMoreButton.js
-      TodoCardElements.js
-    global.js
-    global.css
-    index.html
-  config.js
-  serve-local.sh
-  update-pages.sh
-  package.json
-  README.md
 ```
 
 ### [public/components/](/public/components)
