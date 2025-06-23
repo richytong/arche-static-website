@@ -58,7 +58,7 @@ npm i
 4. Start the local web server
 
 ```
-./serve-local
+./serve-local.sh
 ```
 
 5. Navigate to `http://localhost:4507/` in your browser
