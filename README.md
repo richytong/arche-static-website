@@ -40,7 +40,7 @@ npm start
 
 ![open-index-html-2](https://rubico.land/assets/open-index-html-2.jpg)
 
-2. Scroll down to the start of the `<body></body>` tag.
+2. Scroll down to the start of the `<body></body>` tag
 
 ![scroll-down-to-start-of-body-tag](https://rubico.land/assets/scroll-down-to-start-of-body-tag.jpg)
 
