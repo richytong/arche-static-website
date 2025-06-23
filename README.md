@@ -31,3 +31,5 @@ npm start
 ```
 
 5. Navigate to `http://localhost:4507/` in your browser
+
+![vanilla-static-website-home-page](https://rubico.land/assets/vanilla-static-website-home-page.jpg)
