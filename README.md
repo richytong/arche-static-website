@@ -45,7 +45,7 @@ This page is served to requests for the home page `/`.
 
 ### [config.js](/config.js)
 
-Update pages, dependencies, and site metadata here.
+Contains information about pages, dependencies, and site metadata.
 
 ### [serve-local.sh](/serve-local.sh)
 
