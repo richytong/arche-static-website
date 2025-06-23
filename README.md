@@ -6,16 +6,6 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ```text
 vanilla-static-website/
-├── lib/
-│   ├── findPaths.js
-│   ├── findPaths.test.js
-│   ├── HeadTags.js
-│   ├── ModuleScriptTag.js
-│   ├── ObjectAttributes.js
-│   ├── PageHTML.js
-│   ├── parseHTML.js
-│   ├── ScriptTag.js
-│   └── StylesheetTag.js
 ├── public/
 │   ├── components
 │   │   └── ClickExample.js
@@ -32,6 +22,23 @@ vanilla-static-website/
 ├── package.json
 └── README.md
 ```
+
+`vanilla-static-website/`
+  * `public/`
+    * `components/`
+      * `ClickExample.js`
+    * `elements/`
+      * `LoadMoreButton.js`
+      * `TodoCardElements.js`
+    * `global.css`
+    * `global.js`
+    * `index.html`
+    * `index.js`
+  * `config.js`
+  * `serve-local.sh`
+  * `update-pages.sh`
+  * `package.json`
+  * `README.md`
 
 ## Run it locally
 
