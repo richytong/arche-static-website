@@ -38,7 +38,7 @@ npm start
 
 1. Open the [index.html](/public/index.html) file in your IDE or text editor
 
-![open-index-html](https://rubico.land/assets/open-index-html.jpg)
+![open-index-html-2](https://rubico.land/assets/open-index-html-2.jpg)
 
 2. Scroll down to the start of the `<body></body>` tag.
 
