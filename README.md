@@ -37,7 +37,7 @@ JavaScript in this file is available in all HTML `.html` and JavaScript `.js` fi
 
 ### [public/global.css](/public/global.css)
 
-CSS in this file is available in all HTML `.html` and JavaScript `.js` files.
+CSS in this file is applied to all HTML `.html` files.
 
 ### [public/index.html](/public/index.html)
 
