@@ -65,7 +65,7 @@ npm i
 
 5. Navigate to `http://localhost:4507/` in your browser
 
-![arche-static-website-home-page](https://rubico.land/assets/arche-static-website-home-page.jpg)
+![arche-static-website-home-page](https://rubico.land/assets/vanilla-static-website-home-page.jpg)
 
 ## Make changes to the code
 
@@ -122,7 +122,7 @@ myChangeElement.appendChild(myJSElement)
 
 6. Refresh the page `http://localhost:4507/` to view the changes
 
-![arche-static-website-changes](https://rubico.land/assets/arche-static-website-changes.jpg)
+![arche-static-website-changes](https://rubico.land/assets/vanilla-static-website-changes.jpg)
 
 ## Add a new page
 
