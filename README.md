@@ -4,40 +4,22 @@ A website built with vanilla HTML, CSS, and JavaScript.
 ## Project Structure
 
 [vanilla-static-website/](/)
-  * [lib/](/lib)
-    * [README.md](/lib/README.md)
-  * [public/](/public)
-    * [components/](/public/components)
-      * [ClickExample.js](/public/components/ClickExample.js)
-    * [elements/](/public/elements)
-      * [LoadMoreButton.js](/public/elements/LoadMoreButton.js)
-      * [TodoCardElements.js](/public/elements/TodoCardElements.js)
-    * [global.js](/public/global.js)
-    * [global.css](/public/global.css)
-    * [index.html](/public/index.html)
-  * [config.js](/config.js)
-  * [serve-local.sh](/serve-local.sh)
-  * [update-pages.sh](/update-pages.sh)
-  * [package.json](/package.json)
-  * [README.md](/README.md)
-
-[vanilla-static-website/]
-  * [lib/]
-    * [README.md]
-  * [public/]
-    * [components/]
-      * [ClickExample.js]
-    * [elements/]
-      * [LoadMoreButton.js]
-      * [TodoCardElements.js]
-    * [global.js]
-    * [global.css]
-    * [index.html]
-  * [config.js]
-  * [serve-local.sh]
-  * [update-pages.sh]
-  * [package.json]
-  * [README.md]
+&nbsp;&nbsp;[lib/](/lib)
+&nbsp;&nbsp;&nbsp;&nbsp;[README.md](/lib/README.md)
+&nbsp;&nbsp;[public/](/public)
+&nbsp;&nbsp;&nbsp;&nbsp;[components/](/public/components)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ClickExample.js](/public/components/ClickExample.js)
+&nbsp;&nbsp;&nbsp;&nbsp;[elements/](/public/elements)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LoadMoreButton.js](/public/elements/LoadMoreButton.js)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[TodoCardElements.js](/public/elements/TodoCardElements.js)
+&nbsp;&nbsp;&nbsp;&nbsp;[global.js](/public/global.js)
+&nbsp;&nbsp;&nbsp;&nbsp;[global.css](/public/global.css)
+&nbsp;&nbsp;&nbsp;&nbsp;[index.html](/public/index.html)
+&nbsp;&nbsp;[config.js](/config.js)
+&nbsp;&nbsp;[serve-local.sh](/serve-local.sh)
+&nbsp;&nbsp;[update-pages.sh](/update-pages.sh)
+&nbsp;&nbsp;[package.json](/package.json)
+&nbsp;&nbsp;[README.md](/README.md)
 
 ## Run it locally
 
