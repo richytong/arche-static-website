@@ -13,8 +13,8 @@ arche-static-website/
         elements/
             LoadMoreButton.js
             TodoCardElements.js
-        global.js # JavaScript here is available in all .js files
-        global.css # css here is available to all pages
+        global.js
+        global.css
         index.html # start here
     config.js
     serve-local.sh
@@ -34,6 +34,14 @@ Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this
 ### [public/global.js](/public/global.js)
 
 JavaScript in this file is available in all HTML `.html` and JavaScript `.js` files.
+
+### [public/global.css](/public/global.css)
+
+CSS in this file is available in all HTML `.html` and JavaScript `.js` files.
+
+### [public/index.html](/public/index.html)
+
+Start editing here. Serves request for the home page `/`.
 
 ## Run it locally
 
