@@ -23,6 +23,10 @@ arche-static-website/
     README.md
 ```
 
+### [lib/](/lib)
+
+Start hacking here. See the [readme](/lib/readme).
+
 ### [public/components/](/public/components)
 
 Put [React](https://react.dev/) components in this directory.
