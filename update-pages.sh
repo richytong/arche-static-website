@@ -4,7 +4,10 @@ const fs = require('fs')
 const findPaths = require('./lib/findPaths')
 const PageHTML = require('./lib/PageHTML')
 const parseHTML = require('./lib/parseHTML')
+const validateConfig = require('./lib/validateConfig')
 const config = require('./config')
+
+validateConfig(config)
 
 const {
   domain,
