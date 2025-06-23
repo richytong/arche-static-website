@@ -23,11 +23,11 @@ vanilla-static-website/
   README.md
 ```
 
-### components
+### components/
 
 Put [React](https://react.dev/) components in this directory
 
-### elements
+### elements/
 
 Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory
 
