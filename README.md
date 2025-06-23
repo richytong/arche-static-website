@@ -53,7 +53,7 @@ npm start
 </div>
 ```
 
-![add-new-html-2](https://rubico.land/assets/add-new-html.jpg)
+![add-new-html-2](https://rubico.land/assets/add-new-html-2.jpg)
 
 4. Add new JavaScript
 
@@ -67,5 +67,22 @@ const myJSElement = Div({ id: 'my-js-element' }, [
 myChangeElement.appendChild(myJSElement)
 </script>
 ```
+
+5. Add new CSS
+
+```html
+<style>
+@scope (#my-change) {
+  :scope {
+    background-color: magenta;
+  }
+  h2 {
+    color: blue;
+  }
+}
+</style>
+```
+
+![add-new-css](https://rubico.land/assets/add-new-css.jpg)
 
 ![add-new-javascript-2](https://rubico.land/assets/add-new-javascript.jpg)
