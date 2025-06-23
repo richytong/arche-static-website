@@ -6,12 +6,12 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ```
 vanilla-static-website/
-┣─lib/
-┣─public/
-┃ ┣─elements/
-┃ ┣─components/
-┃ ┗─index.html
-┗─README.md
+┣━lib/
+┣━public/
+┃ ┣━elements/
+┃ ┣━components/
+┃ ┗━index.html
+┗━README.md
 ```
 
 ## Run it locally
