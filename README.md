@@ -33,7 +33,7 @@ Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this
 
 ### [public/global.js](/public/global.js)
 
-JavaScript in this file is available in all `<script></script>` tags in all `.html` files and all `.js` files imported into those `.html` files.
+JavaScript in this file is available in all HTML (`.html`) and JavaScript (`.js`) files.
 
 ## Run it locally
 
