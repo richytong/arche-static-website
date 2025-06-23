@@ -44,8 +44,10 @@ npm start
 
 ![scroll-down-to-start-of-body-tag](https://rubico.land/assets/scroll-down-to-start-of-body-tag.jpg)
 
-3. Add new html
+3. Add new HTML
 
-![add-new-html](https://rubico.land/assets/add-new-html.jpg)
+![add-new-html-2](https://rubico.land/assets/add-new-html.jpg)
 
-4. tmp
+4. Add new JavaScript
+
+![add-new-javascript-2](https://rubico.land/assets/add-new-javascript.jpg)
