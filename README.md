@@ -8,20 +8,28 @@ vanilla-static-website/
   lib/
     README.md
   public/
-    components/
+    components/ # React components go here
       ClickExample.js
-    elements/
+    elements/ # Document elements go here
       LoadMoreButton.js
       TodoCardElements.js
-    global.js
-    global.css
-    index.html
+    global.js # JavaScript here is available in all .js files
+    global.css # css here is available to all pages
+    index.html # start here
   config.js
   serve-local.sh
   update-pages.sh
   package.json
   README.md
 ```
+
+### components
+
+Put [React](https://react.dev/) components in this directory
+
+### elements
+
+Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory
 
 ## Run it locally
 
