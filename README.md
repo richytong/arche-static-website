@@ -33,3 +33,7 @@ npm start
 5. Navigate to `http://localhost:4507/` in your browser
 
 ![vanilla-static-website-home-page](https://rubico.land/assets/vanilla-static-website-home-page.jpg)
+
+## Make changes to the code
+
+1. Open the [index.html](/public/index.html) file in your IDE or text editor
