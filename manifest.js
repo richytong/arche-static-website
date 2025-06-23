@@ -1,5 +1,5 @@
-const ScriptTag = require('./ScriptTag')
-const StylesheetTag = require('./StylesheetTag')
+const ScriptTag = require('./lib/ScriptTag')
+const StylesheetTag = require('./lib/StylesheetTag')
 
 module.exports = {
   domain: 'my-domain.com',

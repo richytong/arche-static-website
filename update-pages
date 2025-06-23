@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-require('rubico/global')
+// require('rubico/global')
 const fs = require('fs')
 const pathWalk = require('presidium/internal/pathWalk')
-const PageHTML = require('./PageHTML')
+const PageHTML = require('./lib/PageHTML')
+const parseHTML = require('./lib/parseHTML')
 const manifest = require('./manifest')
-const parseHTML = require('./parseHTML')
 
 const {
   domain,
@@ -55,24 +55,6 @@ async function main() {
       bodyHTML,
     }))
   }
-
-    /*
-  for (const page of pages) {
-    const { title, description, url, filepath } = page
-
-    const absPath = `${__dirname}/${pagesDirectory}/${filepath}`
-    console.log('Creating', absPath)
-
-    await fs.promises.writeFile(absPath, PageHTML({
-      title,
-      description,
-      url: `https://${domain}${url}`,
-      scriptDependencies,
-      stylesheets,
-      bodyHTML: '',
-    }))
-  }
-  */
 
 }
 
