@@ -5,6 +5,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
 ## Project Structure
 
 [vanilla-static-website/](/)
+    [lib/](/lib)
     [public/](/public)
         [components/](/public/components)
             [ClickExample.js](/public/components/ClickExample.js)
