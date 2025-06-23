@@ -183,7 +183,7 @@ TODO
 ## Deployment
 This project deploys to a new Amazon S3 Bucket for the [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
 
-Simply run `deploy-aws-s3.sh`.
+Simply run
 
 ```
 ./deploy-aws-s3.sh
