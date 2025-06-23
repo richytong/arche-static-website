@@ -3,7 +3,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-* [vanilla-static-website/](/)
+[vanilla-static-website/](/)
   * [lib/](/lib)
     * [README.md](/lib/README.md)
   * [public/](/public)
@@ -20,6 +20,24 @@ A website built with vanilla HTML, CSS, and JavaScript.
   * [update-pages.sh](/update-pages.sh)
   * [package.json](/package.json)
   * [README.md](/README.md)
+
+[vanilla-static-website/]
+  * [lib/]
+    * [README.md]
+  * [public/]
+    * [components/]
+      * [ClickExample.js]
+    * [elements/]
+      * [LoadMoreButton.js]
+      * [TodoCardElements.js]
+    * [global.js]
+    * [global.css]
+    * [index.html]
+  * [config.js]
+  * [serve-local.sh]
+  * [update-pages.sh]
+  * [package.json]
+  * [README.md]
 
 ## Run it locally
 
