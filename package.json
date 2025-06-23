@@ -13,7 +13,7 @@
     "vanilla"
   ],
   "scripts": {
-    "start": "serve -p 4507 public"
+    "start": "./serve.sh"
   },
   "devDependencies": {
     "serve": "^14.2.4"
