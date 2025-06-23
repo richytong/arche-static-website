@@ -46,8 +46,27 @@ npm start
 
 3. Add new HTML
 
+```html
+<div id="my-change">
+  <h2>My Change</h2>
+  <p>My HTML</p>
+</div>
+```
+
 ![add-new-html-2](https://rubico.land/assets/add-new-html.jpg)
 
 4. Add new JavaScript
+
+```html
+<script>
+const myChangeElement = document.getElementById('my-change')
+const { Div, P } = DocumentElement
+const myJSElement = Div({ id: 'my-js-element' }, [
+  P('My JS Element'),
+  P('Using DocumentElement'),
+])
+myChangeElement.appendChild(myJSElement)
+</script>
+```
 
 ![add-new-javascript-2](https://rubico.land/assets/add-new-javascript.jpg)
