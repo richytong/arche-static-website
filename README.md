@@ -4,7 +4,6 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-```
 vanilla-static-website/
 ├── lib/
 │   ├── findPaths.js
@@ -31,7 +30,6 @@ vanilla-static-website/
 ├── update-pages
 ├── package.json
 └── README.md
-```
 
 ## Run it locally
 
