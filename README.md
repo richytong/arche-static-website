@@ -25,11 +25,11 @@ vanilla-static-website/
 
 ### components/
 
-Put [React](https://react.dev/) components in this directory.
+Put [React](https://react.dev/) components in this directory. Create React elements in pure JavaScript with [Arche](https://github.com/richytong/arche?tab=readme-ov-file#using-react).
 
 ### elements/
 
-Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory. You can create them easily with [Arche](https://github.com/richytong/arche).
+Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory. Create elements easily with [Arche](https://github.com/richytong/arche?tab=readme-ov-file#arche).
 
 ## Run it locally
 
