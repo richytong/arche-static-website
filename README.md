@@ -21,6 +21,9 @@ A website built with vanilla HTML, CSS, and JavaScript.
   - [package.json](/package.json)
   - [README.md](/README.md)
 
+### [lib](/lib)
+Test
+
 ## Run it locally
 
 1. Fork the repo
