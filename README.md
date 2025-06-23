@@ -8,7 +8,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
     <dd>
         <dl>
             <dt>lib/</dt>
-            <dd>README.md</dd>
+            <dd><a href="/lib/README.md">README.md</a></dd>
         </dl>
     </dd>
 </ul>
