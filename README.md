@@ -59,7 +59,7 @@ TODO
 
 TODO
 
-#### config.pagesDirectory
+#### config.pagesDir
 
 TODO
 
