@@ -55,6 +55,8 @@ Starts the local static web server.
 
 Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`.
 
+Read more at [configuration](#configuration).
+
 ### [lib/](/lib)
 
 Start hacking here. See the [readme](/lib/readme).
