@@ -12,10 +12,10 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ```
 # ssh
-git clone git@github.com:my-github-user/vanilla-static-website.git
+$ git clone git@github.com:my-github-user/vanilla-static-website.git
 
 # https
-git clone https://github.com/my-github-user/vanilla-static-website.git
+$ git clone https://github.com/my-github-user/vanilla-static-website.git
 ```
 
 3. Install the dependencies
