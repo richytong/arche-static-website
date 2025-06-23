@@ -73,7 +73,7 @@ Starts the local static web server.
 
 ### [update-pages.sh](/update-pages.sh)
 
-Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#config.js).
+Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#configjs).
 
 ### [package.json](/package.json)
 
