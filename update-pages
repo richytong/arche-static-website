@@ -5,7 +5,7 @@ const fs = require('fs')
 const pathWalk = require('presidium/internal/pathWalk')
 const PageHTML = require('./lib/PageHTML')
 const parseHTML = require('./lib/parseHTML')
-const manifest = require('./manifest')
+const config = require('./config')
 
 const {
   domain,
@@ -13,7 +13,7 @@ const {
   stylesheets,
   pagesDirectory,
   pages,
-} = manifest
+} = config
 
 /**
  * @name main
@@ -37,7 +37,7 @@ async function main() {
 
     if (page == null) {
       console.error(content)
-      throw new Error(`page not found in manifest: ${pageFilepath}`)
+      throw new Error(`page not found in config: ${pageFilepath}`)
     }
 
     const { title, description, url } = page
