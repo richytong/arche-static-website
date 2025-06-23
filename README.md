@@ -1,10 +1,10 @@
-# vanilla-static-website
-A website built with vanilla HTML, CSS, and JavaScript.
+# arche-static-website
+A static website built with [Arche](https://github.com/richytong/arche?tab=readme-ov-file#arche).
 
 ## Project Structure
 
 ```
-vanilla-static-website/
+arche-static-website/
   lib/
     README.md
   public/
@@ -45,10 +45,10 @@ JavaScript in this file is available in all HTML (`.html`) and JavaScript (`.js`
 
 ```
 # ssh
-git clone git@github.com:my-github-user/vanilla-static-website.git
+git clone git@github.com:my-github-user/arche-static-website.git
 
 # https
-git clone https://github.com/my-github-user/vanilla-static-website.git
+git clone https://github.com/my-github-user/arche-static-website.git
 ```
 
 3. Install dependencies
@@ -65,7 +65,7 @@ npm i
 
 5. Navigate to `http://localhost:4507/` in your browser
 
-![vanilla-static-website-home-page](https://rubico.land/assets/vanilla-static-website-home-page.jpg)
+![arche-static-website-home-page](https://rubico.land/assets/arche-static-website-home-page.jpg)
 
 ## Make changes to the code
 
@@ -122,7 +122,7 @@ myChangeElement.appendChild(myJSElement)
 
 6. Refresh the page `http://localhost:4507/` to view the changes
 
-![vanilla-static-website-changes](https://rubico.land/assets/vanilla-static-website-changes.jpg)
+![arche-static-website-changes](https://rubico.land/assets/arche-static-website-changes.jpg)
 
 ## Add a new page
 

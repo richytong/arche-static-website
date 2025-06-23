@@ -31,8 +31,8 @@ module.exports = {
 
   pages: [
     {
-      title: 'Vanilla Static Website',
-      description: 'A website built with vanilla HTML, CSS, and JavaScript',
+      title: 'Arche Static Website',
+      description: 'A static website built with Arche',
       url: '/',
       filepath: '/index.html',
     }

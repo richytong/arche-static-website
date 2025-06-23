@@ -1,2 +1,2 @@
-# vanilla-static-website/lib
-Library for Vanilla Static Website
+# arche-static-website/lib
+Library for Arche Static Website

@@ -1,16 +1,22 @@
 {
-  "name": "vanilla-static-website",
+  "name": "arche-static-website",
   "version": "0.0.0",
-  "description": "Vanilla Static Website",
+  "description": "A static website built with Arche",
   "author": "Richard Tong",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "github:richytong/vanilla-static-website"
+    "url": "github:richytong/arche-static-website"
   },
-  "homepage": "https://github.com/richytong/vanilla-static-website",
+  "homepage": "https://github.com/richytong/arche-static-website",
   "keywords": [
-    "vanilla"
+    "arche",
+    "react",
+    "html",
+    "css",
+    "javascript",
+    "jsdom",
+    "jquery"
   ],
   "scripts": {
   },
