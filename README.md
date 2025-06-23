@@ -41,7 +41,11 @@ CSS in this file is applied to all HTML `.html` files.
 
 ### [public/index.html](/public/index.html)
 
-Serves requests for the home page `/`.
+HTML file for the home page. Serves requests for `/`.
+
+### [config.js](/config.js)
+
+Update pages, dependencies, and site metadata here.
 
 ## Run it locally
 
