@@ -4,41 +4,22 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-```text
-vanilla-static-website/
-├── public/
-│   ├── components
-│   │   └── ClickExample.js
-│   ├── elements
-│   │   ├── LoadMoreButton.js
-│   │   └── TodoCardElements.js
-│   ├── global.css
-│   ├── global.js
-│   ├── index.html
-│   └── index.js
-├── config.js
-├── serve.sh
-├── update-pages
-├── package.json
-└── README.md
-```
-
-`vanilla-static-website/`
-  * `public/`
-    * `components/`
-      * `ClickExample.js`
-    * `elements/`
-      * `LoadMoreButton.js`
-      * `TodoCardElements.js`
-    * `global.css`
-    * `global.js`
-    * `index.html`
-    * `index.js`
-  * `config.js`
-  * `serve-local.sh`
-  * `update-pages.sh`
-  * `package.json`
-  * `README.md`
+[vanilla-static-website/](/)
+    [public/](/public)
+        [components/](/public/components)
+            [ClickExample.js](/public/components/ClickExample.js)
+        [elements/](/public/elements)
+            [LoadMoreButton.js](/public/elements/LoadMoreButton.js)
+            [TodoCardElements.js](/public/elements/TodoCardElements.js)
+        [global.css](/public/global.css)
+        [global.js](/public/global.js)
+        [index.html](/public/index.html)
+        [index.js](/)
+    [config.js](/config.js)
+    [serve-local.sh](/serve-local.sh)
+    [update-pages.sh](/update-pages.sh)
+    [package.json](/package.json)
+    [README.md](/README.md)
 
 ## Run it locally
 
