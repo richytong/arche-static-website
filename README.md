@@ -15,7 +15,7 @@ arche-static-website/
             TodoCardElements.js
         global.js
         global.css
-        index.html # start here
+        index.html
     config.js
     serve-local.sh
     update-pages.sh
@@ -41,7 +41,7 @@ CSS in this file is available in all HTML `.html` and JavaScript `.js` files.
 
 ### [public/index.html](/public/index.html)
 
-Start editing here. Serves request for the home page `/`.
+Serves requests for the home page `/`.
 
 ## Run it locally
 
