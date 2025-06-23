@@ -55,6 +55,14 @@ Starts the local static web server.
 
 Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. Read more at [configuration](#configuration).
 
+### [package.json](/package.json)
+
+Stores metadata about this project including `name`, `version`, `dependencies`, and `scripts`.
+
+### [README.md](/README.md)
+
+You are reading this file.
+
 ### [lib/](/lib)
 
 Start hacking here. See the [readme](/lib/readme).
