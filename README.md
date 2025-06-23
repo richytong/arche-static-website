@@ -47,6 +47,14 @@ HTML file for the home page. Serves requests for `/`.
 
 Update pages, dependencies, and site metadata here.
 
+### [serve-local.sh](/serve-local.sh)
+
+Starts the local static web server.
+
+### [update-pages.sh](/update-pages.sh)
+
+Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`.
+
 ### [lib/](/lib)
 
 Start hacking here. See the [readme](/lib/readme).
