@@ -189,4 +189,4 @@ Simply run
 ./deploy-aws-s3.sh
 ```
 
-See this [guide](/TODO) for setting up a new domain on Amazon Web Services with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
+See this [guide](/TODO) for setting up a new domain on [Amazon Web Services](https://aws.amazon.com/) with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
