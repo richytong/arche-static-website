@@ -4,10 +4,10 @@ A website built with vanilla HTML, CSS, and JavaScript.
 ## Project Structure
 
 <dl>
-    <dt>vanilla-static-website/</dt>
+    <dt><a href="/">vanilla-static-website/</a></dt>
     <dd>
         <dl>
-            <dt>lib/</dt>
+            <dt><a href="/lib">lib</a></dt>
             <dd><a href="/lib/README.md">README.md</a></dd>
         </dl>
     </dd>
