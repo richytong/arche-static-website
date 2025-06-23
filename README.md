@@ -2,6 +2,18 @@
 
 A website built with vanilla HTML, CSS, and JavaScript.
 
+## Project Structure
+
+```
+vanilla-static-website/
+┣─lib/
+┣─public/
+┃ ┣─elements/
+┃ ┣─components/
+┃ ┗─index.html
+┗─README.md
+```
+
 ## Run it locally
 
 1. Fork the repo
@@ -90,3 +102,7 @@ myChangeElement.appendChild(myJSElement)
 6. Refresh the page `http://localhost:4507/` to view the changes
 
 ![vanilla-static-website-changes](https://rubico.land/assets/vanilla-static-website-changes.jpg)
+
+## Add a new page
+
+TODO
