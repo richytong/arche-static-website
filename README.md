@@ -25,11 +25,11 @@ vanilla-static-website/
 
 ### components/
 
-Put [React](https://react.dev/) components in this directory
+Put [React](https://react.dev/) components in this directory.
 
 ### elements/
 
-Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory
+Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory. You can create them easily with [Arche](https://github.com/richytong/arche).
 
 ## Run it locally
 
