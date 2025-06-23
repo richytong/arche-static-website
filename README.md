@@ -86,3 +86,7 @@ myChangeElement.appendChild(myJSElement)
 ```
 
 ![add-new-css](https://rubico.land/assets/add-new-css.jpg)
+
+6. Refresh the page `http://localhost:4507/` to preview the changes
+
+![vanilla-static-website-changes](https://rubico.land/assets/vanilla-static-website-changes.jpg)
