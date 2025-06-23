@@ -29,8 +29,6 @@ async function main() {
 
   for (const path of paths) {
     const pageFilepath = path.replace(`${__dirname}/${pagesDirectory}`, '')
-    console.log('pageFilepath', pageFilepath)
-
     const content = await fs.promises.readFile(path)
     const page = pages.find(page => page.filepath == pageFilepath)
 
