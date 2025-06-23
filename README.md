@@ -3,6 +3,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
+```text
 [vanilla-static-website/](/)
     [lib/](/lib)
         [README.md](/lib/README.md)
@@ -21,6 +22,7 @@ A website built with vanilla HTML, CSS, and JavaScript.
     [update-pages.sh](/update-pages.sh)
     [package.json](/package.json)
     [README.md](/README.md)
+```
 
 ## Run it locally
 
