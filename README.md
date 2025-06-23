@@ -187,13 +187,13 @@ Run the deployment script.
 
 ```
 # uses your default aws configuration and credentials found in ~/.aws/config and ~/.aws/credentials
-./deploy-aws-s3.sh
+./deploy-aws-s3
 
 # provide your aws profile
-AWS_PROFILE=<your_aws_profile> ./deploy-aws-s3.sh
+AWS_PROFILE=<your_aws_profile> ./deploy-aws-s3
 
 # provide your aws credentials directly
-AWS_ACCESS_KEY_ID=<your_aws_access_key_id> AWS_SECRET_ACCESS_KEY=<your_secret_access_key> AWS_REGION=<your_aws_region> ./deploy-aws-s3.sh
+AWS_ACCESS_KEY_ID=<your_aws_access_key_id> AWS_SECRET_ACCESS_KEY=<your_secret_access_key> AWS_REGION=<your_aws_region> ./deploy-aws-s3
 ```
 
 Next we will set up a new domain on [Amazon Web Services](https://aws.amazon.com/) with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
