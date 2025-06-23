@@ -37,3 +37,11 @@ npm start
 ## Make changes to the code
 
 1. Open the [index.html](/public/index.html) file in your IDE or text editor
+
+![open-index-html](https://rubico.land/assets/open-index-html.jpg)
+
+2. Scroll down to the start of the `<body></body>` tag.
+
+![scroll-down-to-start-of-body-tag](https://rubico.land/assets/scroll-down-to-start-of-body-tag.jpg)
+
+3. Add new html
