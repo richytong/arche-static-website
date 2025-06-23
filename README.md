@@ -55,10 +55,10 @@ git clone https://github.com/my-github-user/vanilla-static-website.git
 npm i
 ```
 
-4. Start the web server
+4. Start the local web server
 
 ```
-npm start
+./serve-local
 ```
 
 5. Navigate to `http://localhost:4507/` in your browser
