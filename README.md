@@ -25,11 +25,11 @@ vanilla-static-website/
 
 ### [public/components/](/public/components)
 
-Put [Arche](https://github.com/richytong/arche?tab=readme-ov-file#using-react) [React](https://react.dev/) components in this directory.
+Put [React](https://react.dev/) components in this directory.
 
 ### [public/elements/](/public/elements)
 
-Put [Arche](https://github.com/richytong/arche?tab=readme-ov-file#arche) [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory.
+Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this directory.
 
 ### [public/global.js](/public/global.js)
 
