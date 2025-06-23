@@ -23,3 +23,5 @@ git clone https://github.com/my-github-user/vanilla-static-website.git
 ```
 npm i
 ```
+
+4. tmp
