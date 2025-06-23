@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-// require('rubico/global')
 const fs = require('fs')
-const pathWalk = require('presidium/internal/pathWalk')
+const findPaths = require('./lib/findPaths')
 const PageHTML = require('./lib/PageHTML')
 const parseHTML = require('./lib/parseHTML')
 const config = require('./config')
@@ -24,7 +23,7 @@ const {
  * ```
  */
 async function main() {
-  const paths = await pathWalk(`${__dirname}/${pagesDirectory}`, {
+  const paths = await findPaths(`${__dirname}/${pagesDirectory}`, {
     ignore: ['*.css', '*.js'],
   })
 
@@ -33,7 +32,7 @@ async function main() {
     console.log('pageFilepath', pageFilepath)
 
     const content = await fs.promises.readFile(path)
-    const page = pages.find(eq(pageFilepath, get('filepath')))
+    const page = pages.find(page => page.filepath == pageFilepath)
 
     if (page == null) {
       console.error(content)
