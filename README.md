@@ -46,4 +46,6 @@ npm start
 
 3. Add new html
 
+![add-new-html](https://rubico.land/assets/add-new-html.jpg)
+
 4. tmp
