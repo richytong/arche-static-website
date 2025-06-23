@@ -68,6 +68,8 @@ myChangeElement.appendChild(myJSElement)
 </script>
 ```
 
+![add-new-javascript-2](https://rubico.land/assets/add-new-javascript.jpg)
+
 5. Add new CSS
 
 ```html
@@ -84,5 +86,3 @@ myChangeElement.appendChild(myJSElement)
 ```
 
 ![add-new-css](https://rubico.land/assets/add-new-css.jpg)
-
-![add-new-javascript-2](https://rubico.land/assets/add-new-javascript.jpg)
