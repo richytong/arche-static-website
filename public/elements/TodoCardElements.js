@@ -10,7 +10,7 @@
  */
 function TodoCardElements({ todos }) {
   return todos.map(todo => {
-    return Div({ class: 'todos-card' }, [
+    return Div({ class: 'todo-card' }, [
       Input({
         type: 'checkbox',
         checked: todo.completed,
