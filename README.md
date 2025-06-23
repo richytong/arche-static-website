@@ -65,7 +65,7 @@ You are reading this file.
 
 ### [lib/](/lib)
 
-Start hacking [here](/lib/README.md).
+(Advanced) Start hacking [here](/lib/README.md).
 
 ## Run it locally
 

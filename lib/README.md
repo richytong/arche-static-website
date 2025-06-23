@@ -1,2 +1,2 @@
-# arche-static-website/lib
+# lib
 Library for Arche Static Website
