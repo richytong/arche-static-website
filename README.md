@@ -3,6 +3,16 @@ A website built with vanilla HTML, CSS, and JavaScript.
 
 ## Project Structure
 
+<dl>
+    <dt>[vanilla-static-website/](/)</dt>
+    <dd>
+        <dl>
+            <dt>[lib/](lib)</dt>
+            <dd>[README.md](/lib/README.md)</dd>
+        </dl>
+    </dd>
+</ul>
+
 [vanilla-static-website/](/)
   - [lib/](/lib)
     - [README.md](/lib/README.md)
