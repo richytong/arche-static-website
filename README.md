@@ -10,6 +10,15 @@ A website built with vanilla HTML, CSS, and JavaScript.
             <dt><a href="/lib">lib/</a></dt>
             <dd><a href="/lib/README.md">README.md</a></dd>
         </dl>
+        <dl>
+            <dt><a href="/public">lib/</a></dt>
+            <dd>
+                <dl>
+                    <dt><a href="/public/components">components/</a></dt>
+                    <dd><a href="/public/components/ClickExample.js">ClickExample.js</a></dd>
+                </dl>
+            </dd>
+        </dl>
     </dd>
 </ul>
 
