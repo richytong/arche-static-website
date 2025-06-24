@@ -50,19 +50,19 @@ Contains information about pages, dependencies, and site metadata.
 
 #### config.domain
 
-TODO
+The [domain name](https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name/) of the website, e.g. `example.com`. Register a new domain with [Amazon Route53](https://console.aws.amazon.com/route53/domains/home).
 
 #### config.scripts
 
-TODO
+A list of [script tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script) that will be loaded by every page.
 
 #### config.stylesheets
 
-TODO
+A list of stylesheet [link tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link) that will be loaded by every page.
 
-#### config.pagesDir
+#### config.publicDir
 
-TODO
+The name of the directory that stores the website's HTML, JavaScript, and CSS files.
 
 #### config.pages
 
@@ -78,7 +78,7 @@ Synchronizes the public HTML pages in `public/` with the pages, dependencies, an
 
 ### [deploy-aws-s3](/deploy-aws-s3)
 
-Uploads all files in the `public` directory or the directory specified by [config.pagesDir](#configpagesdir) to an Amazon S3 Bucket. See [deployment](#deployment).
+Uploads all files in the `public` directory or the directory specified by [config.publicDir](#configpagesdir) to an Amazon S3 Bucket. See [deployment](#deployment).
 
 ### [package.json](/package.json)
 

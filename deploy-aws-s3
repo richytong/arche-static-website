@@ -11,7 +11,7 @@ const config = require('./config')
 
 validateConfig(config)
 
-const { domain, pagesDir } = config
+const { domain, publicDir } = config
 
 /**
  * @name main
@@ -30,7 +30,7 @@ async function main() {
   })
   await bucket.ready
 
-  const dir = path.join(__dirname, pagesDir)
+  const dir = path.join(__dirname, publicDir)
   const paths = await findPaths(dir)
 
   for (const path of paths) {

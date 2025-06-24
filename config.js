@@ -27,7 +27,7 @@ module.exports = {
     StylesheetTag('/global.css'),
   ],
 
-  pagesDir: 'public',
+  publicDir: 'public',
 
   pages: [
     {

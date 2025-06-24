@@ -13,7 +13,7 @@ const {
   domain,
   scripts,
   stylesheets,
-  pagesDir,
+  publicDir,
   pages,
 } = config
 
@@ -26,12 +26,12 @@ const {
  * ```
  */
 async function main() {
-  const paths = await findPaths(`${__dirname}/${pagesDir}`, {
+  const paths = await findPaths(`${__dirname}/${publicDir}`, {
     ignore: ['*.css', '*.js'],
   })
 
   for (const path of paths) {
-    const pageFilepath = path.replace(`${__dirname}/${pagesDir}`, '')
+    const pageFilepath = path.replace(`${__dirname}/${publicDir}`, '')
     const content = await fs.promises.readFile(path)
     const page = pages.find(page => page.filepath == pageFilepath)
 
