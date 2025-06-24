@@ -83,7 +83,7 @@ Synchronizes the public HTML pages in `public/` with the pages, dependencies, an
 
 ### [deploy-aws-s3](/deploy-aws-s3)
 
-Uploads all files in the `public` directory or the directory specified by [config.publicDir](#configpublicdir) to an Amazon S3 Bucket. See [deployment](#deployment).
+Uploads all files in [config.publicDir](#configpublicdir) to an Amazon S3 Bucket. See [deployment](#deployment).
 
 ### [package.json](/package.json)
 
@@ -191,7 +191,7 @@ myChangeElement.appendChild(myJSElement)
 TODO
 
 ## Deployment
-This project deploys to a new Amazon S3 Bucket for the domain specified by [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
+This project deploys to a new Amazon S3 Bucket for [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
 
 Run the deployment script.
 
