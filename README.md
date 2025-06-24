@@ -34,11 +34,11 @@ Put [elements](https://developer.mozilla.org/en-US/docs/Web/API/Element) in this
 
 ### [public/global.js](/public/global.js)
 
-JavaScript in this file is globally available in all public HTML `.html` and JavaScript `.js` files.
+JavaScript in this file is run at the top of all HTML `.html` files and before all other JavaScript `.js` files in [config.publicDir](#configpublicdir). Define global variables and functions in this file, e.g. `window.myVariable = 1`.
 
 ### [public/global.css](/public/global.css)
 
-CSS in this file is applied to all public HTML `.html` files.
+CSS in this file is applied to all HTML `.html` files in [config.publicDir](#configpublicdir)
 
 ### [public/index.html](/public/index.html)
 
