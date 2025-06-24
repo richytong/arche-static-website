@@ -87,7 +87,7 @@ Uploads all files in [config.publicDir](#configpublicdir) to an Amazon S3 Bucket
 
 ### [package.json](/package.json)
 
-Stores metadata about this project including `name`, `version`, `dependencies`, and `scripts`.
+Stores metadata about this project including `name`, `version`, `dependencies`, and `scripts`. Read more about [package.json](https://docs.npmjs.com/cli/v11/configuring-npm/package-json).
 
 ### [README.md](/README.md)
 
