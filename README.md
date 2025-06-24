@@ -66,7 +66,7 @@ The name of the directory that stores the website's HTML, JavaScript, and CSS fi
 
 #### config.pages
 
-A list of objects that specify the website's pages, includes at least four properties: `title`, `description`, `url`, and `filepath`.
+A list of objects that specify the website's pages, includes four properties: `title`, `description`, `url`, and `filepath`.
 
   * `title` - the page's title. This will be used for the page's [metadata](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata)
   * `description` - the page's description. This will be used for the page's metadata
