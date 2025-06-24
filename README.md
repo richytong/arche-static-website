@@ -83,7 +83,7 @@ Synchronizes the public HTML pages in `public/` with [config.js](#configjs).
 
 ### [deploy-aws-s3](/deploy-aws-s3)
 
-Uploads all files in [config.publicDir](#configpublicdir) to an Amazon S3 Bucket. See [deployment](#deployment).
+Uploads all files in [config.publicDir](#configpublicdir) to an Amazon S3 Bucket for [config.domain](#configdomain). See [deployment](#deployment).
 
 ### [package.json](/package.json)
 
