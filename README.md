@@ -46,7 +46,7 @@ This page is served to requests for the home page `/`.
 
 ### [config.js](/config.js)
 
-Contains information about pages, dependencies, and site [metadata](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata).
+Stores data about the site's `domain`, `scripts`, `stylesheets`, `publicDir`, and `pages`.
 
 #### config.domain
 
@@ -79,7 +79,7 @@ Starts the local static web server.
 
 ### [update-pages](/update-pages)
 
-Synchronizes the public HTML pages in `public/` with the pages, dependencies, and site metadata in `config.js`. See [config.js](#configjs).
+Synchronizes the public HTML pages in `public/` with [config.js](#configjs).
 
 ### [deploy-aws-s3](/deploy-aws-s3)
 
