@@ -191,7 +191,7 @@ myChangeElement.appendChild(myJSElement)
 TODO
 
 ## Deployment
-This project deploys to a new Amazon S3 Bucket for [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
+We will deploy to a new Amazon S3 Bucket for [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
 
 Run the deployment script.
 
