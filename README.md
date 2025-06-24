@@ -191,7 +191,7 @@ myChangeElement.appendChild(myJSElement)
 TODO
 
 ## Deployment
-We will deploy to a new Amazon S3 Bucket for [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
+Deploy to a new Amazon S3 Bucket for [config.domain](#configdomain). Read more about [Amazon S3 Buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#BasicsBucket).
 
 Run the deployment script.
 
@@ -206,4 +206,4 @@ AWS_PROFILE=<your_aws_profile> ./deploy-aws-s3
 AWS_ACCESS_KEY_ID=<your_aws_access_key_id> AWS_SECRET_ACCESS_KEY=<your_secret_access_key> AWS_REGION=<your_aws_region> ./deploy-aws-s3
 ```
 
-Next we will set up a new domain on [Amazon Web Services](https://aws.amazon.com/) with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
+Set up a new domain on [Amazon Web Services](https://aws.amazon.com/) with [S3](https://aws.amazon.com/s3/), [CloudFront](https://aws.amazon.com/cloudfront/), and [Route53](https://aws.amazon.com/route53/).
