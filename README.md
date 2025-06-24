@@ -38,7 +38,7 @@ JavaScript in this file is run at the top of all HTML `.html` files in [config.p
 
 ### [public/global.css](/public/global.css)
 
-CSS in this file is applied to all HTML `.html` files in [config.publicDir](#configpublicdir)
+CSS in this file is applied to all HTML `.html` files in [config.publicDir](#configpublicdir).
 
 ### [public/index.html](/public/index.html)
 
