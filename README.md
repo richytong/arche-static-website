@@ -68,10 +68,10 @@ The name of the directory that stores the website's HTML, JavaScript, and CSS fi
 
 A list of objects that specify the website's pages, includes at least four properties: `title`, `description`, `url`, and `filepath`.
 
-  * `title`: the page's title
-  * `description`: the page's description
-  * `url`: the page's relative url
-  * `filepath`: the location of the page within the public directory specified by [config.publicDir](#configpublicdir)
+  * `title` - the page's title
+  * `description` - the page's description
+  * `url` - the page's relative url
+  * `filepath` - the location of the page within the public directory specified by [config.publicDir](#configpublicdir)
 
 ### [serve-local.sh](/serve-local.sh)
 
