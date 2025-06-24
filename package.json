@@ -18,7 +18,9 @@
     "jsdom",
     "jquery"
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "mocha */**test.js"
+  },
   "devDependencies": {
     "serve": "^14.2.4"
   },
