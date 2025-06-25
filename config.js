@@ -35,6 +35,12 @@ module.exports = {
       description: 'A static website built with Arche',
       url: '/',
       filepath: '/index.html',
+    },
+    {
+      title: 'Another Page - Arche Static Website',
+      description: 'Another page in the static website built with Arche',
+      url: '/another-page',
+      filepath: '/another-page.html',
     }
   ],
 }

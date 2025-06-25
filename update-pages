@@ -26,37 +26,41 @@ const {
  * ```
  */
 async function main() {
-  const paths = await findPaths(`${__dirname}/${publicDir}`, {
-    ignore: ['*.css', '*.js'],
-  })
+  for (const page of pages) {
+    const { title, description, url, filepath } = page
+    const fullFilepath = `${__dirname}/${publicDir}${filepath}`
+    try {
+      const content = await fs.promises.readFile(fullFilepath)
+        .then(buf => buf.toString('utf8'))
+      const $ = parseHTML(content)
+      const bodyHTML = $('body').html().trim()
 
-  for (const path of paths) {
-    const pageFilepath = path.replace(`${__dirname}/${publicDir}`, '')
-    const content = await fs.promises.readFile(path)
-    const page = pages.find(page => page.filepath == pageFilepath)
+      console.log('Updating page', fullFilepath.replace(process.env.HOME, '~'))
 
-    if (page == null) {
-      console.error(content)
-      throw new Error(`page not found in config: ${pageFilepath}`)
+      await fs.promises.writeFile(fullFilepath, PageHTML({
+        title,
+        description,
+        url: `https://${domain}${url}`,
+        scripts,
+        stylesheets,
+        bodyHTML,
+      }))
+    } catch (error) {
+      if (error.message.includes('ENOENT')) {
+        console.log('Creating page', fullFilepath.replace(process.env.HOME, '~'))
+        await fs.promises.writeFile(fullFilepath, PageHTML({
+          title,
+          description,
+          url: `https://${domain}${url}`,
+          scripts,
+          stylesheets,
+          bodyHTML: '',
+        }))
+      } else {
+        throw error
+      }
     }
-
-    const { title, description, url } = page
-
-    const $ = parseHTML(content)
-    const bodyHTML = $('body').html().trim()
-
-    console.log('Updating page', path.replace(process.env.HOME, '~'))
-
-    await fs.promises.writeFile(path, PageHTML({
-      title,
-      description,
-      url: `https://${domain}${url}`,
-      scripts,
-      stylesheets,
-      bodyHTML,
-    }))
   }
-
 }
 
 main()
