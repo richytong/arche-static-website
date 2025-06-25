@@ -26,6 +26,13 @@ const {
  * ```
  */
 async function main() {
+  if (fs.existsSync(`${__dirname}/${publicDir}`)) {
+    // continue
+  } else {
+    console.log('Creating public directory', publicDir)
+    await fs.promises.mkdir(`${__dirname}/${publicDir}`)
+  }
+
   for (const page of pages) {
     const { title, description, url, filepath } = page
     const fullFilepath = `${__dirname}/${publicDir}${filepath}`
